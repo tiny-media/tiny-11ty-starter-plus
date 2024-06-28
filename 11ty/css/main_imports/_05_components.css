@@ -1,0 +1,174 @@
+/* header */
+.site-header {
+    background-color: var(--color-primary);
+    padding: var(--spacing-medium) 0;
+  }
+  
+  .site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .site-nav__logo {
+    color: var(--color-background);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .site-nav__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .site-nav__item {
+    margin-left: var(--spacing-medium);
+  }
+  
+  .site-nav__link {
+    color: var(--color-background);
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+  }
+  
+  .site-nav__link:hover,
+  .site-nav__link:focus {
+    opacity: 0.8;
+  }
+  
+  .dark-mode-toggle {
+    background: none;
+    border: none;
+    color: var(--color-background);
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+
+
+/* footer CSS */
+.site-footer {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    padding: var(--spacing-large) 0;
+    margin-top: var(--spacing-large);
+  }
+  
+  .site-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .site-footer p {
+    margin: 0;
+  }
+  
+  .footer-nav__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-nav__item {
+    margin-left: var(--spacing-medium);
+  }
+  
+  .footer-nav__link {
+    color: var(--color-background);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .footer-nav__link:hover,
+  .footer-nav__link:focus {
+    opacity: 0.8;
+  }
+
+
+  /* 404 page */
+
+  .error-page {
+    text-align: center;
+    padding: var(--spacing-large);
+  }
+  
+  .error-page h1 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-medium);
+  }
+  
+  .error-page p {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-large);
+  }
+
+  /* home CSS */
+.hero {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    padding: var(--spacing-large);
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-small);
+  }
+  
+  .hero .lead {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  .about-section,
+  .workshops-section {
+    padding: var(--spacing-medium);
+    background-color: var(--color-background);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .about-section h2,
+  .workshops-section h2 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-medium);
+  }
+  
+  .workshop-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: var(--spacing-medium);
+  }
+  
+  .workshop-list li {
+    margin-bottom: var(--spacing-small);
+    padding-left: var(--spacing-medium);
+    position: relative;
+  }
+  
+  .workshop-list li::before {
+    content: '•';
+    color: var(--color-accent);
+    position: absolute;
+    left: 0;
+  }
+  
+  .button-link {
+    display: inline-block;
+    padding: var(--spacing-small) var(--spacing-medium);
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-link:hover,
+  .button-link:focus {
+    background-color: var(--color-primary);
+  }

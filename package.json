@@ -1,0 +1,17 @@
+{
+  "name": "tiny-11ty-starter",
+  "version": "0.1",
+  "type": "module",
+  "devDependencies": {
+    "@11ty/eleventy": "canary",
+    "esbuild": "latest",
+    "html-minifier-terser": "latest",
+    "lightningcss": "latest",
+    "glob": "latest",
+    "chokidar": "latest"
+  },
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  }
+}

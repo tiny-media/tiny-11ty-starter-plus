@@ -1,0 +1,14 @@
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; {{ "now" | date: "%Y" }} Kreatives Schreiben e.V.</p>
+    <nav class="footer-nav">
+      <ul class="footer-nav__list">
+        {% for item in navigation.items %}
+          <li class="footer-nav__item">
+            <a href="{{ item.url }}" class="footer-nav__link">{{ item.text }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</footer>

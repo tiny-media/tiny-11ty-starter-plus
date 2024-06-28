@@ -1,0 +1,34 @@
+/* _02_theme.css */
+:root {
+    --color-primary: #3498db;
+    --color-secondary: #2ecc71;
+    --color-text: #333;
+    --color-background: #fff;
+    --color-accent: #e74c3c;
+    
+    --font-main: 'Arial', sans-serif;
+    --font-heading: 'Georgia', serif;
+    
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+  
+    --container-width: min(90%, 1200px);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-text: #f0f0f0;
+      --color-background: #222;
+    }
+  }
+  
+  body {
+    font-family: var(--font-main);
+    color: var(--color-text);
+    background-color: var(--color-background);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }

@@ -1,0 +1,47 @@
+/* _03_layout.css */
+.container {
+    width: var(--container-width);
+    margin-inline: auto;
+  }
+  
+  .grid {
+    display: grid;
+    gap: var(--spacing-medium);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  }
+  
+  /* For larger screens, we can use a 12-column grid */
+  @supports (width: min(250px, 100%)) {
+    .grid-12 {
+      grid-template-columns: repeat(12, 1fr);
+    }
+  
+    .span-4 {
+      grid-column: span 4;
+    }
+  
+    .span-6 {
+      grid-column: span 6;
+    }
+  
+    .span-8 {
+      grid-column: span 8;
+    }
+  
+    .span-12 {
+      grid-column: span 12;
+    }
+  }
+  
+  /* Container queries */
+  .card-container {
+    container-type: inline-size;
+  }
+  
+  @container (min-width: 400px) {
+    .card {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: var(--spacing-medium);
+    }
+  }
